@@ -519,6 +519,24 @@ class RealBenchmark():
         elif pick_data.lower() == 'dna':
             X, y = fetch_libsvm('dna')
             alpha_scale = 1e5
+        elif pick_data.lower() == 'glass':
+            X, y = fetch_libsvm('glass')
+            alpha_scale = 1e5
+        elif pick_data.lower() == 'iris':
+            X, y = fetch_libsvm('iris')
+            alpha_scale = 1e5
+        elif pick_data.lower() == 'poker':
+            X, y = fetch_libsvm('poker')
+            alpha_scale = 1e5
+        elif pick_data.lower() == 'shuttle':
+            X, y = fetch_libsvm('shuttle')
+            alpha_scale = 1e5
+        elif pick_data.lower() == 'svmguide4':
+            X, y = fetch_libsvm('svmguide4')
+            alpha_scale = 1e5
+        elif pick_data.lower() == 'skin_nonskin':
+            X, y = fetch_libsvm('skin_nonskin')
+            alpha_scale = 1e5
         else:
             raise ValueError("Unsupported dataset %s" % pick_data)
 
